@@ -28,10 +28,15 @@ public class App {
         return Fibonnaci(n) + Fibonnaci(n + 1);  
     }
 
+    public static int Somatorio2(int x, int y){
+
+    }
+
     public static void main(String[] args) throws Exception {
         int n = 5;
         System.out.println(Fatorial(n));
         System.out.println(Somatoria(n));
         System.out.println(Fibonnaci(n));
+        System.out.println(Somatorio2(3, 3));
     }
 }
