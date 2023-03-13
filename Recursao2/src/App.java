@@ -21,12 +21,17 @@ public class App {
     public static int Fibonnaci(int n){
         if (n <= 0){
             return 0;
-        }    
+        }
+        if (n == 1){
+            return 1;
+        }
+        return Fibonnaci(n) + Fibonnaci(n + 1);  
     }
 
     public static void main(String[] args) throws Exception {
         int n = 5;
         System.out.println(Fatorial(n));
         System.out.println(Somatoria(n));
+        System.out.println(Fibonnaci(n));
     }
 }
