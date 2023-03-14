@@ -10,10 +10,13 @@ public class App {
     }
 
     public static int Somatorio(int n){
-        //tem condição de erro?
-        //tem condição especial?
-        //condição base pra recursão
-        return 0;
+        if (n == 0){
+            return 0;
+        }
+        if (n > 0){
+            return n + Somatorio(n - 1);
+        }
+        return n + Somatorio(n + 1);
     }
 
     public static int Fibonnaci(int n){
@@ -33,7 +36,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         int n = 5;
         System.out.println("o fatorial de "+n+" é: "+Fatorial(n));
-        //System.out.println(Somatorio(n));
+        System.out.println("o somatorio de "+n+" é: "+Somatorio(n));
         //System.out.println(Fibonnaci(n));
         //System.out.println(Somatorio2(3, 3));
     }
